@@ -1,0 +1,12 @@
+[package]
+name = "flow-control"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Erik Nordin <NordzillaCode@gmail.com>"]
+description = "Declarative macros for common flow-control use cases such as break, continue, and return."
+homepage = "https://github.com/nordzilla/flow-control"
+repository = "https://github.com/nordzilla/flow-control"
+documentation = "https://docs.rs/flow-control"
+categories = ["rust-patterns"]
+keywords = ["flow-control", "macro", "break-if", "continue-if", "return-if"]
