@@ -104,12 +104,12 @@
 /// ```
 #[macro_export]
 macro_rules! break_if {
-    ($predicate:expr) => {
+    ($predicate:expr $(,)?) => {
         if $predicate {
             break;
         }
     };
-    ($predicate:expr, $label:tt) => {
+    ($predicate:expr, $label:tt $(,)?) => {
         if $predicate {
             break $label;
         }
@@ -173,12 +173,12 @@ macro_rules! break_if {
 /// ```
 #[macro_export]
 macro_rules! continue_if {
-    ($predicate:expr) => {
+    ($predicate:expr $(,)?) => {
         if $predicate {
             continue;
         }
     };
-    ($predicate:expr, $label:tt) => {
+    ($predicate:expr, $label:tt $(,)?) => {
         if $predicate {
             continue $label;
         }
@@ -229,12 +229,12 @@ macro_rules! continue_if {
 /// ```
 #[macro_export]
 macro_rules! return_if {
-    ($predicate:expr) => {
+    ($predicate:expr $(,)?) => {
         if $predicate {
             return;
         }
     };
-    ($predicate:expr, $ret:expr) => {
+    ($predicate:expr, $ret:expr $(,)?) => {
         if $predicate {
             return $ret;
         }
